@@ -1,0 +1,92 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    background-color: #f9f7f7; 
+    font-family: 'Arial', sans-serif;
+    color: #333; 
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    max-width: 800px; 
+    flex-grow: 1;
+}
+
+.info {
+    flex: 1;
+    text-align: left; 
+}
+
+.info h1{
+    margin : 0;
+    text-align: center;
+} .info p {
+    margin: 0; 
+}
+
+.skills-container {
+    flex: 1; 
+    text-align: right; 
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    max-width: 300px; 
+    margin: 0 auto; 
+}
+
+.skills-list li {
+    margin-bottom: 20px;
+}
+
+.skill-bar {
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skill-level {
+    height: 100%;
+    width: 0; 
+    background-color: #3498db; 
+    transition: width 1s ease; 
+}
+
+.bottom-button {
+    margin-top: 20px; 
+    text-align: center; 
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #3498db; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #2980b9; 
+    transform: scale(1.05);
+}
+
+.button:active {
+    transform: scale(0.95);
+}
